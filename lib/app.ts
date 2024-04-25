@@ -4,6 +4,7 @@ import Controller from './interfaces/controller.interface';
 import bodyParser from "body-parser";
 import mongoose from "mongoose";
 import { requestLoggerMiddleware } from './middlewares/requestLogger.middleware'
+import {removeExpiredTokens} from "./monitors/token.monitor";
 class App {
     public app: express.Application;
 
@@ -13,6 +14,7 @@ class App {
 
         this.initializeControllers(controllers)
         this.connectToDatabase();
+        removeExpiredTokens();
     }
 
     private initializeMiddlewares(): void {

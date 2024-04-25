@@ -1,11 +1,11 @@
-import {IPost, Query} from "../models/post.model";
-import model from "../schemas/post.schema";
+import {IData, Query} from "../models/data.model";
+import model from "../schemas/data.schema";
 
-class PostService {
+class DataService {
 
-    public async createPost(postParams: IPost): Promise<IPost> {
+    public async createPost(dataParams: IData): Promise<IData> {
         try {
-            const post = new model(postParams);
+            const post = new model(dataParams);
             await post.save();
             return post;
         } catch (error) {
@@ -13,7 +13,7 @@ class PostService {
         }
     }
 
-    public async browsePosts(query: Query<number | string | boolean>): Promise<IPost[]> {
+    public async browsePosts(query: Query<number | string | boolean>): Promise<IData[]> {
         try {
             return await model.find(query, {__v: 0});
         } catch (error) {
@@ -37,7 +37,7 @@ class PostService {
         }
     }
 
-    public async getById(id: string): Promise<IPost | null> {
+    public async getById(id: string): Promise<IData | null> {
         try {
             return await model.findById(id);
         } catch (error) {
@@ -46,4 +46,4 @@ class PostService {
     }
 }
 
-export default PostService;
+export default DataService;
