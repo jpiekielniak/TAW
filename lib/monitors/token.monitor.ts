@@ -1,14 +1,14 @@
 import TokenModel from '../modules/schemas/token.schema';
 
 export const removeExpiredTokens = async () => {
-    try {
+    /*try {
         const currentDate = Date.now();
         const counter = await TokenModel.deleteMany({ expirationDate: { $lt: currentDate } });
         console.log('Expired tokens removed:', counter.deletedCount);
     } catch (error) {
         console.error('Error removing expired tokens', error);
         throw new Error('Error removing expired tokens');
-    }
+    }*/
 };
 
 setInterval(async () => {

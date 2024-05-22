@@ -1,8 +1,9 @@
-<div class="card" style="width: 18rem">
-    <blog-item-image [image]="image"></blog-item-image>
+<div class="card" style="width: 18rem;">
+    <blog-item-image [image]="image"/>
     <div class="card-body">
-        <blog-item-text [text]="text"></blog-item-text>
+        <h5 class="card-title">Card title</h5>
+        <div class="card-text">
+            <blog-item-text [text]="text" [id]="id" />
+        </div>
     </div>
-
 </div>
-
