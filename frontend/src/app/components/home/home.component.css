@@ -1,0 +1,30 @@
+.container-custom {
+    text-align: center;
+    font-size: 1.5em; /* Powiększenie czcionki */
+    margin-top: 200px; /* Dodatkowy margines od góry */
+}
+
+.title-custom {
+    margin-top: 100px; /* Dodatkowy margines od góry */
+    font-size: 2.5em; /* Powiększenie czcionki dla tytułu */
+}
+
+.lead-custom {
+    font-size: 1.8em; /* Powiększenie czcionki dla wiodącego tekstu */
+    margin-top: 50px;
+}
+
+.link-custom {
+    color: #007bff; /* Kolor linku */
+    text-decoration: none; /* Usunięcie podkreślenia */
+    margin-top: 50px;
+}
+
+.link-custom:hover {
+    text-decoration: underline; /* Podkreślenie linku przy najechaniu */
+}
+
+.text-custom {
+    font-size: 1.2em; /* Powiększenie czcionki */
+    margin-top: 50px;
+}

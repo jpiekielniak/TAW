@@ -1,0 +1,102 @@
+.admin-panel {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background: lightgray;
+    height: 100%;
+}
+
+.admin-panel h1 {
+    font-size: 36px;
+    color: #333;
+    padding: 10px;
+}
+
+.admin-panel h2 {
+    font-size: 28px;
+    color: #666;
+}
+
+.admin-panel ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.admin-panel li {
+    font-size: 18px;
+    padding: 5px 0;
+}
+
+.btn-delete-posts {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #ff4040;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+}
+
+.btn-delete-posts:hover {
+    background-color: #cc3333;
+}
+
+.post-title {
+    text-decoration: none;
+    color: black !important;
+    display: inline-block;
+    justify-content: flex-start;
+}
+
+.post-title:hover {
+    text-decoration: underline;
+}
+
+.delete-button {
+    margin-left: 10px;
+    background: #cc3333;
+    color: white;
+}
+
+.post-item {
+    padding: 30px;
+}
+.custom-tab-group .mat-tab-label-active {
+    color: blue;
+    font-weight: bold;
+}
+
+.no-favorites {
+    font-size: 24px;
+    color: black !important;
+    padding: 20px;
+}
+
+.delete-button {
+    background-color: #ff5252;
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+    text-transform: uppercase;
+    border: 2px solid black;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+    background-color: #f44336;
+}
+
+.tab-content {
+    height: 100%;
+}
+
+.all-posts {
+    background: #cc3333;
+    color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+

@@ -1,0 +1,32 @@
+.custom-navbar {
+  background-color: #343a40 !important;
+}
+
+.custom-navbar .nav-link {
+  color: #ffffff !important;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+.custom-navbar .nav-link:hover {
+  color: #ffc107 !important;
+}
+
+.custom-navbar .navbar-toggler-icon {
+  color: #ffffff;
+}
+
+.custom-navbar .btn-custom {
+  border: 1px solid #ffc107;
+  color: #ffc107;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.custom-navbar .btn-custom:hover {
+  background-color: #ffc107;
+  color: #343a40;
+}
+
+.custom-navbar .d-flex .nav-link {
+  margin-left: 10px;
+}

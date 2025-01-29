@@ -1,0 +1,78 @@
+.item-details {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+mat-card {
+  max-width: 800px;
+  width: 100%;
+  margin: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background-color: #424242;
+  color: white;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: white;
+}
+
+.image {
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.text {
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.views {
+  display: flex;
+  align-items: center;
+  font-size: 1.2em;
+  margin: 10px 0;
+  justify-content: center;
+}
+
+.views mat-icon {
+  margin-right: 5px;
+  color: white;
+}
+
+mat-card-actions {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.mat-raised-button {
+  flex: 1;
+  margin: 0 5px;
+}
+
+mat-card-actions a.blog-btn {
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  color: white;
+}
+
+mat-card-actions a.blog-btn:hover {
+  transform: scale(1.05);
+}
+
+mat-card-actions a.blog-btn:active {
+  transform: scale(1);
+}

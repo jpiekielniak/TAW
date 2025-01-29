@@ -1,0 +1,34 @@
+<section class="signup container" [@fadeIn]>
+    <h1 class="entry-title"><span>Utwórz konto</span></h1>
+    <hr>
+    <form (ngSubmit)="register()" #registerForm="ngForm" autocomplete="off" method="POST" class="form-horizontal" name="signup" id="signup">
+        <div class="form-group">
+            <mat-form-field appearance="outline" class="full-width">
+                <input matInput [(ngModel)]="credentials.name" type="text" name="mem_name" placeholder="Nazwa" required>
+                <mat-error *ngIf="!credentials.name && registerForm.submitted">Nazwa jest wymagana</mat-error>
+            </mat-form-field>
+        </div>
+
+        <div class="form-group">
+            <mat-form-field appearance="outline" class="full-width">
+                <input matInput [(ngModel)]="credentials.password" type="password" name="password"  placeholder="Hasło" required>
+                <mat-error *ngIf="!credentials.password && registerForm.submitted">Hasło jest wymagane</mat-error>
+            </mat-form-field>
+        </div>
+
+        <div class="form-group">
+            <mat-form-field appearance="outline" class="full-width">
+                <input matInput [(ngModel)]="credentials.email" type="email" name="emailid" placeholder="Email" required>
+                <mat-error *ngIf="!credentials.email && registerForm.submitted">Email jest wymagany</mat-error>
+            </mat-form-field>
+        </div>
+
+        <div *ngIf="error" class="global-error-message">
+            {{ error }}
+        </div>
+
+        <div class="form-group">
+            <button mat-raised-button color="primary" class="btn-block" type="submit">Zarejestruj się</button>
+        </div>
+    </form>
+</section>

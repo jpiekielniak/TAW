@@ -1,0 +1,94 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.login-container {
+  margin-top: 20px;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  border: 1px solid #6c757d;
+}
+
+.form-title {
+  text-align: center;
+  color: #333333;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.full-width {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.mat-form-field {
+  background: #f8f9fa;
+  border-radius: 4px;
+  border: 1px solid #6c757d;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-outline-thick {
+  color: #6c757d;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-outline {
+  color: #6c757d;
+}
+
+.mat-icon {
+  color: #6c757d;
+}
+
+input[matInput] {
+  background-color: #d6d8db;
+  border-radius: 4px;
+  padding: 10px;
+  color: #000000 !important;
+  border: 1px solid #6c757d;
+}
+
+input[matInput]::placeholder {
+  color: black !important;
+  opacity: 1;
+}
+
+mat-error {
+  color: #dc3545;
+}
+
+button[mat-raised-button] {
+  background-color: #80bdff;
+  color: #ffffff;
+  font-weight: bold;
+  width: 100%;
+  height: 45px;
+  border-radius: 5px;
+}
+
+
+a {
+  text-decoration: underline;
+  color: #000000 !important;
+  margin-bottom: 20px;
+}
+
+
+.global-error-message {
+  color: #dc3545;
+  text-align: center;
+  margin-top: 10px;
+}

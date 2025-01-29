@@ -1,0 +1,22 @@
+<div class="container login-container">
+    <h2 class="form-title">Logowanie</h2>
+    <form (ngSubmit)="signIn()" autocomplete="off" class="login-form">
+        <mat-form-field appearance="outline" class="full-width">
+            <mat-icon matPrefix>person</mat-icon>
+            <input matInput [(ngModel)]="credentials.login" type="text" name="username" placeholder="Nazwa" required>
+            <mat-error *ngIf="!credentials.login">Nazwa jest wymagana</mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="full-width">
+            <mat-icon matPrefix>lock</mat-icon>
+            <input matInput [(ngModel)]="credentials.password" type="password" name="password" placeholder="Hasło" required>
+            <mat-error *ngIf="!credentials.password">Hasło jest wymagane</mat-error>
+        </mat-form-field>
+
+        <div>
+            <a mat-button [routerLink]="['/user/reset-password']">Zresetuj hasło</a>
+        </div>
+
+        <button mat-raised-button color="primary" class="btn-block" type="submit">Zaloguj </button>
+    </form>
+</div>

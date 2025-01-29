@@ -1,0 +1,18 @@
+<div class="blog-container">
+    <div *ngFor="let item of items$ | filter:filterText | paginate: { itemsPerPage: itemsPerPage, currentPage: page }" class="blog-item" (click)="navigateToDetail(item._id)">
+        <mat-card class="blog-item-card">
+            <img mat-card-image [src]="item.image" alt="Blog image">
+            <mat-card-content>
+                <p>{{ item.text | summary: 60 }}</p>
+            </mat-card-content>
+        </mat-card>
+    </div>
+
+    <div class="pagination-wrapper">
+        <pagination-controls
+                nextLabel="Następna"
+                previousLabel="Poprzednia"
+                (pageChange)="page = $event">
+        </pagination-controls>
+    </div>
+</div>

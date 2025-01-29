@@ -1,0 +1,30 @@
+<div class="container reset-password-container">
+    <form (ngSubmit)="createPost()" #postForm="ngForm" autocomplete="off" method="POST">
+        <h2 class="form-title">Nowy post</h2>
+        <mat-form-field appearance="outline" class="full-width">
+            <input class="input-text" matInput [(ngModel)]="post.title" type="text" placeholder="Tytuł" name="title"
+                   required>
+            <mat-error *ngIf="!post.title && postForm.submitted">Tytuł jest wymagany</mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="full-width">
+            <input class="input-text" matInput [(ngModel)]="post.text" type="text" name="text" placeholder="Tekst"
+                   required>
+            <mat-error *ngIf="!post.text && postForm.submitted">Tekst jest wymagany</mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="full-width">
+            <input class="input-text" matInput [(ngModel)]="post.image" type="text" placeholder="Zdjęcie" name="image"
+                   required>
+            <mat-error *ngIf="!post.image && postForm.submitted">Zdjęcie jest wymagane</mat-error>
+        </mat-form-field>
+
+        <div *ngIf="error" class="global-error-message">
+            {{ error }}
+        </div>
+
+        <button mat-raised-button type="submit" class="btn-block">
+            Dodaj post
+        </button>
+    </form>
+</div>
